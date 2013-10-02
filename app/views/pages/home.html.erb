@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+<h1> You are in it! </h1>
+
+<% else %>
 
 
 <h1>A long title to an app that does nothing!</h1>
@@ -7,6 +11,7 @@
 
 </p>
 <p>
-	<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
+	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
 
+<% end %>
