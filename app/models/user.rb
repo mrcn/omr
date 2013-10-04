@@ -5,10 +5,11 @@ class User < ActiveRecord::Base
 
 #:recoverable
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :nameW
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name
   # attr_accessible :title, :body
 
-  has_many :pins
+ has_many :pins, :dependent => :destroy
+
 
 
 end
