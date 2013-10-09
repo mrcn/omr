@@ -9,7 +9,6 @@ gem 'aws-sdk'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-gem 'jquery-rails'
 
 group :production do
 	gem 'pg'
